@@ -8,11 +8,11 @@
         "start": "node index.js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "author": "Stream Protocol",
-    "license": "MIT",
+    "author": "",
+    "license": "ISC",
     "dependencies": {
         "@project-serum/spl-token": "^0.26.0",
-        "@solana/spl-token": "^0.3.8",
+        "@solana/spl-token": "^0.1.8",
         "@solana/web3.js": "^1.87.1",
         "axios": "^1.5.1",
         "bcrypt": "^5.1.1",

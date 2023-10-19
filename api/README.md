@@ -1,6 +1,6 @@
 ## Schemas
 
-businesses
+#### Businesses
 - id (primary key)
 - business_name
 - representative_id (foreign key)
@@ -13,7 +13,7 @@ businesses
 - webhook_url
 - created_at
 
-users
+#### Users
 - id (primary key)
 - company_id (foreign key)
 - firstname
@@ -24,7 +24,7 @@ users
 - password
 - created_at
 
-transactions
+#### Transactions
 - id (primary key)
 - business_id (foreign key)
 - reference (unique)
@@ -37,14 +37,14 @@ transactions
 - amount
 - customer_id (foreign key)
 
-customers
+#### Customers
 - name
 - email (unique)
 - created_at
 
-ads
+#### Ads
 - base_currency (JSON:  AED | USD| NGN) more than one base currency can be selected
-- quote_crypto (JSON:  USDC | USDT| NGN) more than one quote crypto can be selected
+- quote_crypto (JSON:  USDC | USDT| SOL) more than one quote crypto can be selected
 - minimum_amount (positive integer)
 - maximum_amount (positive integer)
 
@@ -56,12 +56,12 @@ ads
 - Request body
 ```
 {
-  "business_name": "Business Name",
+  "business_name": "Acme Inc.",
   "representative_firstname": "John",
   "representative_lastname": "Doe",
-  "representative_email": "johndoe@gmail.com"
+  "representative_email": "john.doe@gmail.com"
   "representative_phone": "2348123456789",
-  "default_currency": "AED" //Should be determined by the phone number extension selected
+  "default_currency": "EUR" //Should be determined by the phone number extension selected
 }
 ```
 - Response body
@@ -90,7 +90,7 @@ password
 // session details...
 ```
 
-/api/v1/business/upadate
+/api/v1/business/update
 
 - POST/PUT
 - Request body
@@ -138,8 +138,8 @@ password
   total_amount,
   customer_email,
   recipient,
-  crypto, //USDT, USDC
-  currency, //AED, NGN, USD
+  cryptocurrency, //USDT, USDC, EURC, SOL, STRM
+  fiat_currency, //EUR, GRP, AED, NGN, USD
   business_id
 }
 ```

@@ -1,3 +1,12 @@
+# Controller
+
+**Solana Programs (Smart Contracts)**
+
+- business.js
+
+#### Example program:
+
+````
 const Joi = require("joi");
 const model = require("../db/model");
 const web3 = require("@solana/web3.js");
@@ -55,7 +64,7 @@ const listTransactions = async (req, res) => {
 
 const createTransaction = async (req, res) => {
     const schema = Joi.object({
-        channel: Joi.string().valid("BANK", "WISE", "STREAMPAY", "METAMASK", "PHANTOM", "QR").required(),
+        channel: Joi.string().valid("BANK", "WISE", "STREAMPAY", "PHANTOM", "QR").required(),
         currency: Joi.string().valid("EUR", "GBR", "NGN", "AED", "USD").required(),
         token: Joi.string().required().length(44),
         recipient: Joi.string().required().length(44),
@@ -170,3 +179,4 @@ module.exports = {
     transactionList: listTransactions,
     transactionApprove: approveTransaction,
 };
+````
