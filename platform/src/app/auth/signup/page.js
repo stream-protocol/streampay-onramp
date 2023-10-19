@@ -11,7 +11,7 @@ const Login = () => {
             Welcome back
           </h1>
           <p className="text-sm">
-            Don't have an account?{' '}
+            Don&apos;t have an account?{' '}
             <Link href="/auth/signup">
               <a className="text-[#111827]">Create account</a>
             </Link>

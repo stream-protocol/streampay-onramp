@@ -1,8 +1,8 @@
-"use client":
-import React, { useState } from "react";
-import { useRouter, useSearchParams } from "next/navigation";
-import axios from "axios";
-import { Timer } from "iconsax-react";
+'use client';
+import React, { useState } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
+import axios from 'axios';
+import { Timer } from 'iconsax-react';
 
 const LoginForm = () => {
     const apiURL = process.env.NEXT_PUBLIC_BACKEND_URL;
