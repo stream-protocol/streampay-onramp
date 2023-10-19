@@ -1,10 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import Script from "next/script";
-
-// Icons
-import { Bank, Scan } from "iconsax-react";
 
 // Components
 import Navbar from "./components/HomePageLayout/Navbar";
@@ -25,9 +21,8 @@ export default function Home() {
                             Checkout with StreamPay™
                         </h1>
                         <p className="mt-5 text-base text-[#3F3F3F]">
-                            Accept <span className="underline">cryptocurrency</span> payments from <span className="underline">non-crypto</span> users for your <span className="underline">business with ease.</span>
+                            Seamlessly accept cryptocurrency payments from non-crypto users for your business, ensuring a smooth and hassle-free transaction experience.
                             <br />
-                            Available for ReactJs, VueJs, WordPress, Medusa, and Shopify websites.
                         </p>
                     </div>
                     <div className="w-full max-w-3xl mx-auto z-20 bg-white">
@@ -40,7 +35,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="w-full h-full block absolute top-0 left-0 pointer-events-none">
-                <Image src="/images/MinimalPattern.png" fill className="w-full h-full object-cover" alt="pattern" />
+                <Image src="/images/MinimalPattern.png" fill className="w-full h-full object-cover" alt="Minimal pattern background" />
             </div>
         </div>
     );

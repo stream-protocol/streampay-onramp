@@ -182,7 +182,7 @@ export default function LandingHeroForm() {
                 <div className="flex items-center justify-between flex-wrap mt-4">
                     <div>
                         <h5 className="font-medium text-[#474545] text-sm mb-2">
-                            We accept:
+                            We accept
                         </h5>
                         <div className="flex items-center justify-start text-[#959697] text-xs font-medium gap-3">
                             <div className="inline-flex items-center gap-1">
@@ -208,15 +208,15 @@ export default function LandingHeroForm() {
                             </div>
                             <div className="inline-flex items-center gap-2">
                                 <Image
-                                    src={"/images/image 6.svg"}
-                                    width={14}
-                                    height={14}
+                                    src={"/images/phantom.svg"}
+                                    width={15}
+                                    height={15}
                                     alt="image"
                                 />
                                 <Image
-                                    src={"/images/image 7.svg"}
-                                    width={14}
-                                    height={14}
+                                    src={"/images/metamask-icon.svg"}
+                                    width={15}
+                                    height={15}
                                     alt="image"
                                 />
                             </div>
