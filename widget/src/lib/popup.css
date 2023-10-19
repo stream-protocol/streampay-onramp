@@ -1,0 +1,187 @@
+.payment-method-button {
+    border: 0;
+    width: 100%;
+    border-top: 1px solid #e6e6e6;
+    outline: none;
+    color: #6f6f6f;
+    padding: 14px 15px 14px 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    gap: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.payment-method-button:before {
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 6px;
+    background: #111827;
+    -webkit-box-shadow: -1px 0 13px #111827;
+    box-shadow: -1px 0 13px #111827;
+    border-radius: 3px 0 0 3px;
+    top: 50%;
+    --webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+}
+
+.payment-method-button.active {
+    color: #111827;
+}
+
+.payment-method-button .payment-method-button-text {
+    font-weight: 600;
+}
+
+.icon.small {
+    width: 18px;
+    height: 18px;
+}
+
+.icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+    padding: 20px;
+}
+
+.main-container {
+    flex: 1;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    border-bottom: solid 1px #eee;
+}
+
+.streampay .main-header .logo {
+    font-weight: 700;
+}
+
+.streampay .main-header .customer {
+    text-align: right;
+    font-size: 13px;
+    color: #737373;
+}
+
+.streampay .main-header .customer-pay {}
+
+.streampay .main-body {
+    padding: 30px 0 20px;
+    min-height: 350px;
+}
+
+.streampay .main-body-title {
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #111827;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -.1px;
+}
+
+.streampay .main-account-details {
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+    color: #111827;
+    padding: 16px;
+    font-size: 1.4rem;
+    background: #F1F3F5;
+}
+
+.streampay .main-description {
+    margin: 20px 0;
+    padding: 0 25px;
+}
+
+.streampay .main-button-transparent {
+    font-size: 14px;
+    line-height: 1.4;
+    letter-spacing: -.1px;
+    font-weight: 500;
+    color: #4e4e4e;
+    display: inline-block;
+    white-space: nowrap;
+    background: #fff;
+    border: 1px solid #dcdfe6;
+    height: 42px;
+    width: 100%;
+    margin: 0 0 5px;
+    text-align: center;
+    -webkit-appearance: none;
+    border-radius: 8px;
+    -webkit-transition: .1s;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.streampay .main-button-transparent:hover,
+.streampay .main-button-transparent:active {
+    outline: none;
+    border-color: #efefef;
+    background: #fff;
+    -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .03);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .03);
+    color: #505050;
+}
+
+.streampay .field-label {
+    font-size: 10px;
+    line-height: 12px;
+    color: #343c43;
+}
+
+.streampay .field-value {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #343c43;
+    padding: 5px 0 0;
+    margin-bottom: 20px;
+}
+
+.streampay .text-description {
+    color: #676d72;
+    font-size: 12px;
+    text-align: center;
+}
+
+.button.button--popup {
+    position: absolute;
+    right: -20px;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    display: inline-block;
+    z-index: 3;
+    border-radius: 50%;
+    background: transparent;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+    outline: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.button.button--popup:hover {
+    background-color: #e22b28;
+}
+
+.qr-code-container svg {
+    width: 128px !important;
+    height: 128px !important;
+}

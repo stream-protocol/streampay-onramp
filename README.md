@@ -1,4 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# StreamPay Onramp
+
+![StreamPay Logo](path_to_logo.png)
+
+Stream**Pay** Onramp is a seamless crypto payment solution, bridging the gap between traditional and cryptocurrency payments. Accept cryptocurrency payments effortlessly, even from non-crypto users.
+
+## Monorepo´s
+
+Project APIs, web apps, widget, and more.
+
+**1. API**
+**2. Platform**
+**3- Widget**
+
+## 🌟 Features
+
+- **Multiple Payment Options:** Including Bank Transfer, TransferWise, and QR Code for crypto-savvy users.
+- **Low Transaction Fees:** Just 0.5% per transaction, capped at $10.
+- **Real-Time Messaging:** Instant communication between buyers and sellers.
+- **User-Friendly Interface:** Designed for non-crypto users.
+- **Versatile Integrations:** Compatible with ReactJs, VueJs, Medusa, WordPress, and Shopify.
+- **Instant Conversion & Payouts:** Convert USDC, EURC, and USDT to fiat instantly.
+- **Secure Transactions:** Reliable and secure processing.
+
+## 📌 Table of Contents
+
+- [StreamPay Onramp](#streampay-onramp)
+  - [Monorepo´s](#monorepos)
+  - [🌟 Features](#-features)
+  - [📌 Table of Contents](#-table-of-contents)
+  - [🛠 Installation](#-installation)
+  - [Getting Started](#getting-started)
+  - [🚀 Usage](#-usage)
+  - [🔗 Integration](#-integration)
+  - [🤝 Support](#-support)
+  - [📜 License](#-license)
+- [Todo](#todo)
+
+
+## 🛠 Installation
+
+```bash
+npm install streampay-onramp
+```
 
 ## Getting Started
 
@@ -10,29 +53,43 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## 🚀 Usage
 
-To learn more about Next.js, take a look at the following resources:
+```javascript
+const StreamPay = require('streampay-onramp');
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+const payment = new StreamPay({
+    apiKey: 'YOUR_API_KEY',
+    mode: 'production' // or 'sandbox'
+});
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+payment.init();
+```
 
-## Deploy on Vercel
+## 🔗 Integration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For detailed steps on integrating Stream**Pay** Onramp into various platforms, refer to our [Integration Guide](link_to_integration_guide.md).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🤝 Support
+
+For any queries or issues, please reach out to our [support team](link_to_support).
+
+## 📜 License
+
+Stream**Pay** Onramp is licensed under [MIT]. For more details, see the [LICENSE](LICENSE) file.
+
+# Todo
+
+Stream EURO Stablecoin (sEUR) Program
+
+private tokens: Token[] = [{symbol: "sEUR", address: "Program address here!"}

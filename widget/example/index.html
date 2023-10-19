@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <button onclick="openPopup()">Toggle</button>
+    <script src="popup.js"></script>
+    <script>
+        /** @type {Window.Popup} */
+        let instance;
+        (() => {
+            instance = window.popup.initialize({
+                business: "0292399023"
+            });
+        })();
+
+        function openPopup() {
+            instance.open({
+                amount: "1000",
+                fiat: "EUR",
+                crypto: "USDC",
+                customer_email: "test@mailinator.com",
+            });
+        }
+    </script>
+</body>
+
+</html>
+</script>
+</body>
+
+</html>
