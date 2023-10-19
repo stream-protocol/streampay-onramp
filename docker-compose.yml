@@ -1,10 +1,10 @@
-version: '3'
+version: '1'
 services:
   popup:
     build:
       context: ./widget
       dockerfile: Dockerfile
-    container_name: solramp-popup
+    container_name: streampay-onramp-popup
     ports:
       - "7000:3000"
     depends_on:
@@ -14,7 +14,7 @@ services:
     build:
       context: ./platform
       dockerfile: Dockerfile
-    container_name: solramp-popup
+    container_name: streampay-onramp-popup
     ports:
       - "7000:3000"
     depends_on:
@@ -24,28 +24,27 @@ services:
     build:
       context: ./api
       dockerfile: Dockerfile
-    container_name: solramp-api
+    container_name: streampay-onramp-api
     ports:
       - "7010:3000"
     environment:
-      DB_HOST: 159.65.213.14
+      DB_HOST: localhost
       DB_PORT: 7306
       MYSQL_USER: root
       MYSQL_PASSWORD: password
       MYSQL_DATABASE: mydb
       DB_NAME: mydb
-      JWT_SECRET: f2e61dd95af62e2f2d17bd224c4a2458
-      APP_HOST: http://159.65.213.14:7010
-      ZEPTOMAIL_TOKEN: Zoho-enczapikey wSsVR60g/Rf4Dat7n2KpJb05mF0EUVP3EEp73lT36X76Gf/H9sc5k0GfBQ6vHfNKQjJpEWQR8bt7mR8DgGYLi9wpyQtSACiF9mqRe1U4J3x17qnvhDzJWGxblhaAJI0Bxw9vkmZiEM8g+g==
-      MASTER_ADDRESS: ACbrEQAUrXnMmbb4Logyozwbn6kNySvSBgxsSFQqTLVZ
-      MASTER_KEY: 2ZxfaM32EYFGj9MXt9ss7eJV9wpdSp5iTjgqHoyR7ryXgPFL6sGWrXKRyBEAV9KXbZhaF1ajcf9xsxTvHTcKWuFN
+      JWT_SECRET: 
+      APP_HOST: localhost:7010
+      ZEPTOMAIL_TOKEN: 
+      MASTER_ADDRESS:
+      MASTER_KEY: 
   db:
     image: mysql:5.7
-    container_name: solramp-db
+    container_name: streampay-onramp-db
     environment:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_DATABASE: mydb
     ports:
       - "7306:3306"
-
 
