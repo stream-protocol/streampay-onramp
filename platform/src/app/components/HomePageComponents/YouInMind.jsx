@@ -11,7 +11,6 @@ export default function YouInMind() {
                         Dashboard
                     </h2>
                 </div>
-
                 <div className="flex items-center justify-between flex-wrap gap-y-8 pt-20">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-3 w-full lg:w-1/2 container">
                         <div className="rounded-lg flex items-start justify-start gap-4 flex-col max-w-full py-4 px-2 text-center mx-auto">
@@ -27,7 +26,7 @@ export default function YouInMind() {
                                 </h6>
                                 <p className="text-base text-[#667085]">
                                     Flexibility at your fingertips.
-                                    Pay via Bank Transfer, StreamPay, or opt for wallet payments through Slope Wallet or Phantom Wallet.
+                                    Pay via Bank Transfer, StreamPay, or opt for wallet payments through Metamask, Slope, or Phantom Wallet.
                                 </p>
                             </div>
                         </div>

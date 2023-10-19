@@ -100,11 +100,11 @@ export default function Pricing() {
         </div>
       </div>
       <Image
-        src="/images/"
-        width={150}
-        height={150}
+        src=""
+        width={120}
+        height={120}
         alt=""
-        className="absolute left-10 bottom-0 object-contain pointer-events-none w-auto h-auto"
+        className="absolute left-10 bottom-15 object-contain pointer-events-none w-auto h-auto"
       />
     </section>
   );
